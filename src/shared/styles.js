@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Toolbar from "@material-ui/core/Toolbar";
 
 export const Layout = styled.div`
   display: flex;
@@ -23,6 +24,12 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-grow: 1;
   overflow: auto;
+`;
+
+export const StyledToolbar = styled(Toolbar)`
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const NavbarList = styled.ul`

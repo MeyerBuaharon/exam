@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Content } from "../../shared/styles";
+import { Container, Content,StyledToolbar } from "../../shared/styles";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { connect } from "react-redux";
@@ -14,11 +13,6 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import styled from "styled-components";
 import CategoryForm from "./CategoryForm";
 
-const StyledToolbar = styled(Toolbar)`
-  @media (max-width: 700px) {
-    flex-direction: column;
-  }
-`;
 
 const Categories = ({
   category,
